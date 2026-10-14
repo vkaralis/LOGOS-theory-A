@@ -1,0 +1,149 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "fixed cycle J",
+      "error": 1.0352829704629585e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "check": "fixed cycle peak",
+      "error": 4.658773367083313e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "check": "alternative gate",
+      "error": 4.1022615027141995e-09,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "absorption",
+      "error": 6.392078218120378e-08,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "reduced wait",
+      "error": 1.675386949173685e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "reduced window endpoint",
+      "error": 4.0806136247795166e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "stationary upper bound",
+      "error": 1.5507075669385362e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "finite upper bound",
+      "error": 4.072337094207512e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "finite witness",
+      "error": 4.611436232870858e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "check": "fixed_feasible",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "fixed_feasible_strict",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "selected_feasible",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "selected_strict",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "phase 0.5 Objective gain",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "phase 0.5 Reference retained",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "phase 0.22 Feasibility restoration",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "phase 0.22 No sampled safe candidate",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "nonpositive 0.5",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "nonpositive 0.22",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "information SD 0",
+      "error": 4.349277805126839e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "information SD 0.25",
+      "error": 4.799251479559175e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "information SD 0.5",
+      "error": 2.907293421006152e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "information SD 1.0",
+      "error": 4.320754376507807e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "information SD 2.0",
+      "error": 1.3720517710869018e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    }
+  ]
+}

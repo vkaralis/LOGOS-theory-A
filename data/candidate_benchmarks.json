@@ -1,0 +1,129 @@
+{
+  "description": "Deterministic numerical reference values; no patient data.",
+  "candidates": [
+    {
+      "T": 1.679033,
+      "f": 0.2,
+      "J": 0.08090538981398965,
+      "peak_Z": 0.18807055058446587,
+      "closure_residual": 4.932720898409571e-13,
+      "mean_C": 1.0000000000000002,
+      "run_id": "A-PER-REFINED",
+      "initial_periodic_state": {
+        "C": 0.017167862720246063,
+        "R": 0.5961800659309965,
+        "Z": 0.11815312674908703
+      },
+      "control_vector": [
+        {
+          "start": 0,
+          "end": 0.3358066,
+          "u": 5.0
+        },
+        {
+          "start": 0.3358066,
+          "end": 1.679033,
+          "u": 0
+        }
+      ],
+      "resource_rule": "Exact mean input one; exact administered amount T per comparison period",
+      "realized_D_per_period": 1.679033,
+      "peak_search": "Endpoints, switch and bracketed dZ/dt roots, 1500 brackets per segment; analytic PK and affine periodic map",
+      "cross_solver_max_error": 7.058104101176355e-13,
+      "solver": "DOP853 rtol 2e-11; Radau rtol 2e-12"
+    },
+    {
+      "T": 1.6790274114219867,
+      "f": 0.2,
+      "J": 0.08090538981475714,
+      "peak_Z": 0.18807069065646165,
+      "closure_residual": 4.931610675384945e-13,
+      "mean_C": 1.0,
+      "run_id": "A-PER-RERUN",
+      "initial_periodic_state": {
+        "C": 0.017168143099771882,
+        "R": 0.5961784790906455,
+        "Z": 0.1181535258679846
+      },
+      "control_vector": [
+        {
+          "start": 0,
+          "end": 0.3358054822843974,
+          "u": 5.0
+        },
+        {
+          "start": 0.3358054822843974,
+          "end": 1.6790274114219867,
+          "u": 0
+        }
+      ],
+      "resource_rule": "Exact mean input one; exact administered amount T per comparison period",
+      "realized_D_per_period": 1.6790274114219867,
+      "peak_search": "Endpoints, switch and bracketed dZ/dt roots, 1500 brackets per segment; analytic PK and affine periodic map",
+      "cross_solver_max_error": 7.062128659640621e-13,
+      "solver": "DOP853 rtol 2e-11; Radau rtol 2e-12"
+    },
+    {
+      "T": 1.67903661796,
+      "f": 0.2,
+      "J": 0.08090538981275834,
+      "peak_Z": 0.1880704599047008,
+      "closure_residual": 4.931610675384945e-13,
+      "mean_C": 1.0000000000000002,
+      "run_id": "A-AMP-5",
+      "initial_periodic_state": {
+        "C": 0.01716768120918566,
+        "R": 0.5961810932241,
+        "Z": 0.11815286836649704
+      },
+      "control_vector": [
+        {
+          "start": 0,
+          "end": 0.33580732359200005,
+          "u": 5.0
+        },
+        {
+          "start": 0.33580732359200005,
+          "end": 1.67903661796,
+          "u": 0
+        }
+      ],
+      "resource_rule": "Exact mean input one; exact administered amount T per comparison period",
+      "realized_D_per_period": 1.67903661796,
+      "peak_search": "Endpoints, switch and bracketed dZ/dt roots, 1500 brackets per segment; analytic PK and affine periodic map",
+      "cross_solver_max_error": 7.05546732149287e-13,
+      "solver": "DOP853 rtol 2e-11; Radau rtol 2e-12"
+    },
+    {
+      "T": 1.679903,
+      "f": 0.2,
+      "J": 0.08090537290795416,
+      "peak_Z": 0.18804876103038587,
+      "closure_residual": 4.914957330015568e-13,
+      "mean_C": 1.0000000000000002,
+      "run_id": "A-CAP-EXT",
+      "initial_periodic_state": {
+        "C": 0.017124268658672115,
+        "R": 0.5964270261313859,
+        "Z": 0.11809101427688852
+      },
+      "control_vector": [
+        {
+          "start": 0,
+          "end": 0.3359806,
+          "u": 5.0
+        },
+        {
+          "start": 0.3359806,
+          "end": 1.679903,
+          "u": 0
+        }
+      ],
+      "resource_rule": "Exact mean input one; exact administered amount T per comparison period",
+      "realized_D_per_period": 1.679903,
+      "peak_search": "Endpoints, switch and bracketed dZ/dt roots, 1500 brackets per segment; analytic PK and affine periodic map",
+      "cross_solver_max_error": 7.038120086733102e-13,
+      "solver": "DOP853 rtol 2e-11; Radau rtol 2e-12"
+    }
+  ]
+}

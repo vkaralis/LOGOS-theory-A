@@ -1,0 +1,12 @@
+test_interior_optimum_and_constraints (test_science.RestartChecks.test_interior_optimum_and_constraints) ... ok
+test_constant_reference_and_null (test_science.ScienceChecks.test_constant_reference_and_null) ... ok
+test_finite_budget_tail_and_mass_balance (test_science.ScienceChecks.test_finite_budget_tail_and_mass_balance) ... ok
+test_frozen_candidates_and_independent_solver (test_science.ScienceChecks.test_frozen_candidates_and_independent_solver) ... ok
+test_palbociclib_matched_amounts (test_science.ScienceChecks.test_palbociclib_matched_amounts) ... ok
+test_synthetic_provenance_and_reproducibility (test_science.ScienceChecks.test_synthetic_provenance_and_reproducibility) ... ok
+test_version (test_science.ScienceChecks.test_version) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.752s
+
+OK

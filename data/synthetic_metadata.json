@@ -1,0 +1,7 @@
+{
+  "seed": 20261012,
+  "subjects": 48,
+  "episodes": 144,
+  "source": "Independent random toy generation; no real records or source fitted coefficients.",
+  "limitations": "Demonstrates software execution only. No clinical validation or evidence of treatment benefit."
+}

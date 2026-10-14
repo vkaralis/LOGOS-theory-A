@@ -1,0 +1,67 @@
+{
+  "canonical_main": {
+    "T": 1.6790274114219867,
+    "f": 0.2,
+    "J": 0.08090538981475714,
+    "peak_Z": 0.18807069065646165,
+    "closure_residual": 4.931610675384945e-13,
+    "mean_C": 1.0,
+    "regimen": "Refined cycle",
+    "delta_J": 0.11362089084023014
+  },
+  "fixed_candidate": {
+    "T": 1.679033,
+    "f": 0.2,
+    "J": 0.08090538981398965,
+    "peak_Z": 0.18807055058446587,
+    "closure_residual": 4.932720898409571e-13,
+    "mean_C": 1.0
+  },
+  "constant_J": -0.03271550102547299,
+  "constant_Z": 0.28571428571428575,
+  "tight_cap_candidate": {
+    "T": 1.7406272034290682,
+    "f": 0.2,
+    "J": 0.08082551054782423,
+    "peak_Z": 0.18660553410615155,
+    "closure_residual": 4.354294702579864e-13,
+    "mean_C": 1.0
+  },
+  "alternative_gate": {
+    "T": 1.7406272034290682,
+    "f": 0.2,
+    "J": 0.07885300410226151,
+    "peak_Z": 0.18660553410616457,
+    "closure_residual": 4.722666702150491e-12,
+    "mean_C": 1.0,
+    "reference_J": -0.039999702286641126
+  },
+  "finite_absorption": {
+    "T": 1.6790274114219867,
+    "f": 0.2,
+    "J": 0.07842793607921782,
+    "peak_Z": 0.19970504745059275,
+    "closure_residual": 2.828848266744899e-13,
+    "mean_C": 1.0
+  },
+  "reduced": {
+    "common_wait": 1.7320176235499418,
+    "common_expected_value": 0.48240674915787407,
+    "ideal_expected_value": 0.4904314349277805,
+    "information_gain": 0.008024685769906411,
+    "rate1_optimal_wait": 1.850190832461305,
+    "rate1_max_value": 0.5098199429810755,
+    "rate1_positive_window_end": 4.593168591938637
+  },
+  "phase_resolution": [
+    20,
+    22
+  ],
+  "model_source_SHA256": "ee870974efec76746c8d8cb04a1346b3a9aec425c0bd4bd37471c71723a0c4df",
+  "limits": [
+    "Canonical simulations are normalized hypotheses, not patient fits.",
+    "Grid searches and local refinements do not certify global optimality.",
+    "Phase-map safety is screened; selected trajectories are checked continuously.",
+    "Palbociclib has no tumor efficacy model."
+  ]
+}
