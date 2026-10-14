@@ -1,6 +1,8 @@
 """Check regenerated tables, extensions and phase classifications."""
 from pathlib import Path
-import argparse,json
+import argparse,json,re
+import xml.etree.ElementTree as ET
+from PIL import Image
 import pandas as pd
 
 ap=argparse.ArgumentParser();ap.add_argument('results',type=Path);a=ap.parse_args();out=a.results
@@ -28,6 +30,23 @@ for row,value in zip(noise,[.490431,.489290,.486820,.484234,.482958]):check(f"in
 for filename in ['A_extension_verification.json','A_finite_constant_family.json']:
     if not load(filename)['all_passed']:raise SystemExit(f'Failed internal checks: {filename}')
 if len(load('candidate_verification.json'))!=4:raise SystemExit('Missing candidate identities')
+figure_names = ['F05_canonical_cycle', 'F06_canonical_gain_and_finite',
+    'F07_reduced_restart_information', 'F08_palbociclib_matched_budget',
+    'F09_canonical_phase_map', 'F10_canonical_controls', 'recovery_cycle',
+    'recovery_window', 'restart_boundary_information']
+for name in figure_names:
+    base = out/'figures'/name
+    with Image.open(base.with_suffix('.png')) as im:
+        if any(key.lower() in {'software','author','creator','creation time','comment'}
+               for key in im.info):
+            raise SystemExit(f'Unexpected PNG metadata: {name}')
+    svg = ET.parse(base.with_suffix('.svg'))
+    if any(node.tag.rsplit('}',1)[-1]=='metadata' for node in svg.iter()):
+        raise SystemExit(f'Unexpected SVG metadata: {name}')
+    pdf = base.with_suffix('.pdf').read_bytes()
+    if re.search(rb'/(?:Creator|Producer|CreationDate|ModDate|Author|Title|Subject|Keywords)\b', pdf):
+        raise SystemExit(f'Unexpected PDF metadata: {name}')
+print(f'All {len(figure_names)*3} figures verified without attribution or date metadata.')
 report=dict(all_passed=all(x['passed'] for x in checks),checks=checks)
 (out/'release_verification.json').write_text(json.dumps(report,indent=2)+'\n')
 if not report['all_passed']:raise SystemExit([x for x in checks if not x['passed']])

@@ -2,7 +2,9 @@
 
 The release is executed in a new Python 3.12 virtual environment with individually
 installed pinned dependencies and no inherited site packages. Local execution is
-on macOS arm64. Linux execution is configured in CI but has not been run locally.
+on macOS arm64. Full reproduction also passed on the GitHub-hosted Ubuntu runner
+with Python 3.12.15: seven unit tests and all 24 numerical benchmark checks passed
+in [the initial GitHub Actions run](https://github.com/vkaralis/LOGOS-theory-A/actions/runs/38572540116).
 `reference_results/environment.json` records the actual Python and numerical
 library versions; README commands and requirements-lock.txt reproduce the setup.
 
@@ -37,4 +39,4 @@ screening classifications remain separate from continuously checked witnesses.
 The original source computations have been separated from real-data processing.
 Synthetic subject-held-out predictions cannot confirm observed-data associations,
 causal recovery benefit or a clinical policy. No external reviewer reproduction,
-GitHub CI result, DOI or clinical validation is claimed.
+DOI or clinical validation is claimed. GitHub CI verifies software reproduction.
